@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+}
+#heading ul
+{
+  
+  text-align: center;
+}
+#heading ul li  
+{
+  display: inline;
+  list-style-type: none;
+  padding: 8px;
+}
+#heading ul li a
+{
+  text-decoration: none;;
+  color: cyan;
+    
+}

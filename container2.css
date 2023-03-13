@@ -1,0 +1,13 @@
+.parent{
+    background-color: lawngreen;
+    padding: 20px;
+}
+.id{
+    margin: 5px;
+    min-height: 200px;
+    min-width: 100px;
+    background-color: peru;
+    text-align: center;
+    font-size: large;
+    display: flex;
+}

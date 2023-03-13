@@ -1,0 +1,30 @@
+body{
+    color: gold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+#content{
+    display:grid;
+    /*grid-template-columns: 33.3% 33.3% 33.3%;*/
+    /*grid-template-columns: 1fr 1fr 1fr; is an example of below code*/
+    grid-template-columns: repeat(3,1fr);
+    /*grid-auto-rows: 200px; an example of below code to make the girid responsive*/
+    grid-auto-flow: minmax(200px,auto);
+    /*grid-column gap: 10px;
+    grid-row-gap :{ 10px; } shows how below code works*/
+    grid-gap:5px;
+    /*grid-template-columns: repeat(3) minmax(200px,auto); this codes does the same work as line number 12*/
+    max-width:960PX;
+    margin: 0 auto;
+
+
+
+}
+#content div{
+    background-color:limegreen;;
+    padding: 40PX;
+
+}
+#content div:nth-child(even){
+    background-color: black;
+}

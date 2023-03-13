@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: green;
+  }
+  
+  /* Hero Section */
+  .hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #333;
+    color: #f7f7f7;
+  }
+  
+  .content-container {
+    flex-basis: 50%;
+  }
+  
+  .content-container h1 {
+    margin-top: 0;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+  
+  .content-container p {
+    font-size: 1.2rem;
+  }
+  
+  .image-container {
+    flex-basis: 45%;
+  }
+  
+  .image-container img {
+    max-width: 100%;
+    height:auto;
+  }
+  
+  /* FAQ Section */
+  
+  
+  /* Sign In and Sign Up Buttons */
+  .sign-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  
+  .sign-buttons a {
+    display: block;
+    padding: 1rem 2rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    border-radius: 5px;
+  }
+  
+  .sign-buttons a:last-child {
+    margin-right: 0;
+  }
+  
+  .sign-buttons a:hover {
+    background-color: #f00;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 1rem;
+    text-align: center;
+    padding: 50px;
+    
+  }
+  
+  .footer p {
+    
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  .footer li{
+    list-style: none;
+    text-decoration: none;
+  }  
+  
+  .about {
+    background-color: #333;
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  .about-column {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .links {
+    padding-top: 20px;
+    
+  }
+  
+  .links ul {
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .links  li {
+    margin-left: 10px;
+    list-style: none;
+  }
+  .links a {
+    color: white;
+    text-decoration: none;
+  }

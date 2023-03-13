@@ -1,0 +1,93 @@
+ body
+ {
+background-color: brown;
+ }
+  #head
+ {
+    height: 50px;
+    width:100%;
+    background-color: blue;
+    color: red;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    margin-bottom: 5px;
+ }
+    #head ul
+
+    {
+      
+      text-align: center;
+    }
+    #head ul li  
+    {
+      display: inline;
+      list-style-type: none;
+      padding: 8px;
+    }
+    #head ul li a
+    {
+      text-decoration: none;;
+      color: cyan;
+        
+    }
+    
+ 
+  #navbar
+  {
+    height: 30px;
+    width: 100%;
+    background-color: yellowgreen;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+  }
+  #definition
+  {
+    height: 600px;
+    width: 30%;
+    background-color: purple;
+    color: orange;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    float: left;
+    margin-top: 10px;
+    margin-right:0px;
+
+  }
+  #explanation
+
+{
+    
+    height: 600px;
+    width: 69%;
+    background-color: green;
+    color: magenta;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    float: right;
+    margin-top: 10px;
+  
+    
+  }
+  #footer
+  {
+    height: 50px;
+    width: 50%;
+    background-color: goldenrod;
+    color: brown;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 5px;
+    float: left;
+    
+  }

@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#container{
+    width: 1000px;
+    height: 400px;
+    background-color: lime;
+    margin: 80px auto;;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.Itemone{
+    width: 150px;
+    height: 150px;
+    background-color: tomato;
+    margin: 5px;
+    border-radius: 10px;
+    color: black;;
+    text-align: center;
+    font-size: 25px;
+    
+}

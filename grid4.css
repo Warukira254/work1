@@ -1,0 +1,90 @@
+body {
+
+    background-color: yellow;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    text-align: center;
+}
+div{
+background-color: aqua;
+padding: 20px;
+
+}
+#example{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows: minmax(100px,auto);
+    width: 960px;
+    margin: 0 auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "sidebar1 header header"
+    "sidebar1 box1 box2"
+    "sidebar2 content content"
+    "sidebar2 box3 box4";
+    
+}
+
+#example >*{
+    background-color:teal;
+    padding: 30px;
+}
+sidebar1 {
+    grid-area: sidebar1;
+}
+sidebar2{
+    grid-area: sidebar2;
+}
+header {
+    grid-area: header;
+}
+content{
+    grid-area: content;
+}
+box1{
+    grid-area: box1;
+}
+box2{
+    grid-area: box2;
+}
+box3{
+    grid-area: box3;
+}
+box4 {
+    grid-area: box4;
+}
+
+  @media only screen and (max-width: 720px) {
+    #example {
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+        "sidebar1"
+        "sidebar2"
+        "header"
+        "box1" 
+        "box2"
+        "content"
+        "box3" 
+        "box4"
+        ;
+        
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    #example {
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+        "header"
+        "sidebar1"
+        "sidebar2"
+        "box1"
+        "box2"
+        "content"
+        "box3"
+        "box4";
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  
