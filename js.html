@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic operators</title>
+</head>
+<body>
+    <script>
+        let firstName = prompt("Enter First Name"); 
+        let secondName = prompt("Enter Second Name"); 
+        let fullName = firstName + ' ' + secondName; 
+        alert("Your name is " + fullName);
+
+        let ictMarks = parseInt(prompt("Enter marks for ICT")); 
+        let htmlMarks = parseInt(prompt("Enter marks for HTML"));
+        let cssMarks = parseInt(prompt("Enter marks for CSS"));
+
+        let totalMarks = ictMarks + htmlMarks + cssMarks;
+        let averageMarks = totalMarks / 3;
+        alert("Your average marks is " + averageMarks.toFixed(2));
+        
+        if (averageMarks >= 70 && averageMarks <= 100) {
+            alert("You have an A");
+        } else if (averageMarks >= 60 && averageMarks <= 69) {
+            alert("You have a B");
+        } else if (averageMarks >= 50 && averageMarks <= 59) {
+            alert("You have a C");
+        } else if (averageMarks >= 40 && averageMarks <= 49) {
+            alert("You have a D");
+        } else if (averageMarks < 39 && averageMarks >= 0) { 
+            alert("You have an E");
+        } else {
+            alert("Invalid marks input"); 
+        }
+
+    </script>
+</body>
+</html>
