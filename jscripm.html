@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+</head>
+<body>
+    <script>
+    
+    let priceamount = prompt("Please enter the amount")
+    
+    
+    if ( priceamount > 10000) {
+        let discount = priceamount * 85
+        let discountedprice = discount / 100
+        alert("You have a 15% discount. Please pay"+''+discountedprice);
+    } else if (priceamount => 5000 && priceamount <= 9999) {
+        let discount = priceamount * 90
+        let discountedprice =discount / 100
+        alert("You have a 10% discount. Please pay"+''+discountedprice);
+    } else if (priceamount => 3000 && priceamount <= 4999) {
+        let discount = priceamount * 95
+        let discountedprice =discount / 100
+        alert("You have a 5% discount. Please pay"+''+discountedprice);
+        
+    } else if (priceamount => 0 && priceamount <= 2999) {
+        alert("You have a 0% discount");
+    } 
+     else {
+        alert("Invalid marks input. try again"); 
+    }
+    </script>
+    
+</body>
+</html>
