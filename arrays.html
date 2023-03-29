@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <script>
+        //how to create array
+        Array=[45, 15, 12, 8, 10];
+         Array.push(99);
+        console.log(Array);
+    // to navigate through array using for loop
+   /* for(i=0;i<Myarray.length;i++){
+        console.log(Myarray[i]);
+    }*/
+
+    //to navigate through array using for each
+    /*Array.forEach(element => {
+        console.log(element);
+        
+    });*/
+
+    Array=[45, 15, 12, 8, 10];
+    Array.push(99); 
+    Array.forEach((Element) => {
+       // let div= Element/5;
+        if(Element % 5===0){
+        console.log(Element);
+        }
+    });
+    </script>
+
+</body>
+</html>
