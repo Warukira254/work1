@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inheritance in action</title>
+  </head>
+  <body>
+    <script>
+      class parent {
+        #name;
+        #age;
+        #gender;
+        constructor(name, age, gender) {
+          this.#name = name;
+          this.#age = age;
+          this.#gender = gender;
+        }
+        details() {
+          console.log(
+            `you are ${this.#name} have ${this.#age} years old: ${this.#gender}`
+          );
+        }
+      }
+      class student extends parent {
+        #grade;
+        #year;
+        constructor(name, age, gender, grade, year) {
+          super(name, age, gender);
+          this.#grade = grade;
+          this.#year = year;
+        }
+        studentDetails() {
+          super.details();
+          console.log(
+            `your grade is ${this.#grade} and finished in ${this.#year}`
+          );
+        }
+      }
+      class teacher extends parent {
+        #teach;
+        #salary;
+        constructor(name, age, gender, teach, salary) {
+          super(name, age, gender);
+          this.#teach = teach;
+          this.#salary = salary;
+        }
+        teacherDetails() {
+          super.details();
+          console.log(
+            `you ${this.#teach}Software development and your is ${this.#salary}`
+          );
+        }
+      }
+      class doctor extends parent {
+       #checkup;
+       #prescription;
+        constructor(name, age, gender, checkup, prescription) {
+          super(name, age, gender);
+          this.#checkup = checkup;
+          this.#prescription = prescription;
+        }
+        doctorDetails() {
+          super.details();
+          console.log(
+            `you did 5${this.#checkup} and prescribed ${this.#prescription}`
+          );
+        }
+      }
+
+      let adan = new student("adan", 25, "male", "A", 2023);
+      let abdi = new teacher("Abdi", 50, "male", "teach", 400000);
+      let me = new doctor("kifah", 30, "female", "checkups", "amlodipine");
+      adan.studentDetails();
+       abdi.teacherDetails();
+      me.doctorDetails();
+//       class Person {
+//     #name;
+//     #age;
+//     #gender;
+//     constructor(name,age,gender) {
+//         this.name = name;
+//         this.age = age;
+//         this.gender = gender;
+//     }
+//     details(){
+//         console.log(`my name is ${this.name} aged ${this.age}, gender ${this.gender}`);
+//     }
+// }
+
+// class student extends Person {
+//     constructor(name,age,gender,course,work) {
+//         super(name,age,gender);
+//         this.course = course;
+//         this.work = work;
+//     }
+//     studentdetails(){
+//         super.details();
+//         console.log(`you are taking ${this.course} and currently having ${this.work}`)
+//     }
+// }
+
+// class teacher extends Person{
+//     constructor(name, age, gender,occupation, work){
+//         super(name, age, gender);
+//         this.occupation=occupation;
+//         this.work=work;
+//     }
+//     teacherdetails(){
+//         super.details();
+//         console.log(`your job is ${this.occupation} and currently setting an ${this.work}`)
+//     }
+// }
+
+// class doctor extends Person{
+//     constructor(name, age, gender, work,duty){
+//         super(name, age, gender);
+//         this.work=work;
+//         this.duty=duty;
+//     }
+//     doctordetails(){
+//         super.details();
+//             console.log(`your job is ${this.work} and currently giving a ${this.duty}`);
+//         }
+// }
+
+
+// let Wasabi= new student("Wasabi","20",": female","software dev","exams")
+// let Wasabi1= new teacher("Wasabi","20",": female","teaching","exam")
+// let Wasabi2= new doctor("Wasabi","20",": female","treating patients","prescription")
+// Wasabi.studentdetails();
+// Wasabi1.teacherdetails();
+// Wasabi2.doctordetails();
+    </script>
+  </body>
+</html>
