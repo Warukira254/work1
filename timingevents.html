@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <hi>timmimg events</hi>
+    <div id="timer"></div>
+    <button onclick="starttime()">start time</button>
+    <button onclick="stoptime()">stop time</button><br/><br/>
+    <input type="text" id="timerId"><br/><br/>
+    
+    <button onclick="starttimer('timerId')">start timer</button>
+    <button onclick="stoptimer()">stoptimer</button>
+    <script type="text/javascript">
+        let intervalid;
+        var myintervalid;
+        setInterval(getcurrentDateTime, 1000);
+        function starttime(){
+            intervalid = setInterval(getcurrentDateTime, 1000);
+        }
+        function stoptime(){
+            clearInterval(intervalid);
+        }
+        function getcurrentDateTime(){
+            document.getElementById("timer").innerHTML = new Date();
+        }
+        getcurrentDateTime();
+        function startTimer(controlid){
+            var control = document.getElementById("controlid");
+            var seconds = control.value;
+        }
+        seconds = seconds -1;
+        if(seconds == 0);{
+        control.value = "done";
+        return;
+        }
+         else{
+            control.value = seconds;
+        }
+
+
+    </script>
+</body>
+</html>
